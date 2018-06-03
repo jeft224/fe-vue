@@ -1,0 +1,39 @@
+{
+  "name": "fe-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "clean": "node bin/build.js",
+    "build": "webpack --progress --hide-modules --config bin/webpack.prod.conf.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
+    "c-b": "npm run clean && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^5.1.6",
+    "vue": "^2.5.16",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "sass": "^1.5.1",
+    "sass-loader": "^7.0.2",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^15.2.4",
+    "vue-template-compiler": "^2.5.16",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
+  }
+}
